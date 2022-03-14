@@ -2,7 +2,7 @@ import React from "react";
 
 import { Container } from "react-bootstrap";
 
-const CLIENT_ID = "e7ffa481f3c340a3a82bbe634036acd9";
+const CLIENT_ID = "1828bffc607c44b9b6780004f4010153";
 
 const AUTH_URL = `https://accounts.spotify.com/authorize?client_id=${CLIENT_ID}&response_type=code&redirect_uri=http://localhost:3000&scope=streaming%20user-read-email%20user-read-private%20user-library-read%20user-library-modify%20user-read-playback-state%20user-modify-playback-state`;
 
