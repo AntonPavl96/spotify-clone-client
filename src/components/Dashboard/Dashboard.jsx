@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { useAuth } from "../../hooks";
-import { Container, Form } from "react-bootstrap";
 import SpotifyWebApi from "spotify-web-api-node";
-import { TrackSearchResult } from "..";
+import { useAuth } from "../../hooks";
+import { TrackSearchResult, Player } from "..";
+import { Container, Form } from "react-bootstrap";
 
 const spotifyApi = new SpotifyWebApi({
   clientId: "1828bffc607c44b9b6780004f4010153",
@@ -61,7 +61,9 @@ const Dashboard = ({ code }) => {
           <TrackSearchResult track={track} key={TrackSearchResult.uri} />
         ))}
       </div>
-      <div>Bottom</div>
+      <div>
+        <Player />
+      </div>
     </Container>
   );
 };
